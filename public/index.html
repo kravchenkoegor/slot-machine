@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      Derivco
+    </title>
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+
+      canvas {
+        position: relative;
+        z-index: 1;
+      }
+
+      .form-control {
+        bottom: 20px;
+        position: fixed;
+        right: 40px;
+        width: calc(100vw * 0.3 - 80px);
+        z-index: 2;
+      }
+
+      input {
+        background: rgba(255, 255, 255, 0.7);
+        border: none;
+        font-size: 24px;
+        height: 40px;
+        padding: 0 10px;
+        width: calc(100% - 20px);
+      }
+
+      button {
+        -webkit-appearance: none;
+        background-color: red;
+        border: none;
+        color: #ffffff;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        margin-top: 10px;
+        padding: 10px 0;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <div class="form-control" style="display: none;">
+      <input type="number" name="balance" min="1" max="5000" />
+      <button class="js-set-balance">Set balance</button>
+    </div>
+  </body>
+</html>
